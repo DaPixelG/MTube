@@ -178,7 +178,6 @@ app.get('/watch', async (req, res, next)=>{
             console.log(error);
         }
     }else{
-        fs.writeFileSync(id+'.txt', '0');
         ytdl('https://www.youtube.com/watch?v='+id, { filter: format => format.container === 'mp4', quality:'18'}).pipe(fs.createWriteStream(id+'.mp4')).on("finish",async function(){
             console.log('\x1b[35mFinished downloading \x1b[37m');
             res.redirect('/watch?v='+id);
