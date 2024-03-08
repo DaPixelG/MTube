@@ -32,7 +32,9 @@ https://www.npmjs.com/package/axios
 ------------------
 
 By Brahim Deli
+
 Discord -> @DaPixelGuy
+
 Contact me for any problems :)
 
 ------------------
